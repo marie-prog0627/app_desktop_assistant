@@ -20,7 +20,7 @@ public class AssistantBehaviour: MonoBehaviour {
     void Update(){
         var state = animator.GetCurrentAnimatorStateInfo(0);
 
-        animator.SetInteger("Phase", Action(Recognition.Key));
+        animator.SetInteger("State", Action(Recognition.Key));
         Debug.Log("Assist Judge");
         Debug.Log(Recognition.Key);
 
@@ -40,6 +40,9 @@ public class AssistantBehaviour: MonoBehaviour {
                 break;
             case "さようなら":
                 num = 3;
+                break;
+            case "開いて":
+                num = 4;
                 break;
             default:
                 break;

@@ -12,4 +12,8 @@ public class SoundEvent : MonoBehaviour {
         Debug.Log("Hello!");
 		audioSource.PlayOneShot (se[0]);
 	}
+    void Roger(){
+        Debug.Log("Roger!");
+        audioSource.PlayOneShot (se[1]);
+    }
 }
